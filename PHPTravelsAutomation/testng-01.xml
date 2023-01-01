@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" verbose='1'>
+	<test name="Login" parallel="true" group-by-instances="true">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="tests.Test_01_RegistrationValid"></class>
+			<class name="tests.Test_03_VallidLogin"></class>
+			<class name="tests.Test_04_InvallidLogin"></class>
+		</classes>
+	</test>
+</suite>

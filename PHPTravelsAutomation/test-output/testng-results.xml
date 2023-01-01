@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-01T10:38:34 CET" name="TestSuite" finished-at="2023-01-01T10:39:11 CET" duration-ms="36755">
+    <groups>
+    </groups>
+    <test started-at="2023-01-01T10:38:34 CET" name="Login" finished-at="2023-01-01T10:39:11 CET" duration-ms="36755">
+      <class name="tests.Test_04_InvallidLogin">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.Test_04_InvallidLogin@6340e5f0]" started-at="2023-01-01T10:39:01 CET" name="setUp" finished-at="2023-01-01T10:39:02 CET" duration-ms="1255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="login_invallid()[pri:0, instance:tests.Test_04_InvallidLogin@6340e5f0]" started-at="2023-01-01T10:39:02 CET" name="login_invallid" finished-at="2023-01-01T10:39:11 CET" duration-ms="8738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_invallid -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:tests.Test_04_InvallidLogin@6340e5f0]" started-at="2023-01-01T10:39:11 CET" name="cleanUp" finished-at="2023-01-01T10:39:11 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- tests.Test_04_InvallidLogin -->
+      <class name="tests.Test_03_VallidLogin">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.Test_03_VallidLogin@2794eab6]" started-at="2023-01-01T10:38:49 CET" name="setUp" finished-at="2023-01-01T10:38:51 CET" duration-ms="1530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="login_vallid()[pri:0, instance:tests.Test_03_VallidLogin@2794eab6]" started-at="2023-01-01T10:38:51 CET" name="login_vallid" finished-at="2023-01-01T10:39:01 CET" duration-ms="10025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_vallid -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:tests.Test_03_VallidLogin@2794eab6]" started-at="2023-01-01T10:39:01 CET" name="cleanUp" finished-at="2023-01-01T10:39:01 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- tests.Test_03_VallidLogin -->
+      <class name="tests.Test_01_RegistrationValid">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.Test_01_RegistrationValid@229c6181]" started-at="2023-01-01T10:38:34 CET" name="setUp" finished-at="2023-01-01T10:38:38 CET" duration-ms="3686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registration_vallid()[pri:0, instance:tests.Test_01_RegistrationValid@229c6181]" started-at="2023-01-01T10:38:38 CET" name="registration_vallid" finished-at="2023-01-01T10:38:49 CET" duration-ms="11410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration_vallid -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:tests.Test_01_RegistrationValid@229c6181]" started-at="2023-01-01T10:38:49 CET" name="cleanUp" finished-at="2023-01-01T10:38:49 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- tests.Test_01_RegistrationValid -->
+    </test> <!-- Login -->
+  </suite> <!-- TestSuite -->
+</testng-results>
