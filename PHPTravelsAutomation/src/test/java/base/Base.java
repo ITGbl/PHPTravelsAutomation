@@ -33,7 +33,7 @@ public class Base {
 		
 		if (browser.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
-					"C:\\Users\\graha\\SeleniumTraning\\SimpleRegistration\\resources\\geckodriver.exe");
+					"C:\\geckodriver.exe");
 			this.driver = new FirefoxDriver();
 
 		} else if (browser.equalsIgnoreCase("chrome")) {
