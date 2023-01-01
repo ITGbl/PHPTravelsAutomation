@@ -78,7 +78,7 @@ public class RegistrationPage {
 		accountTypeWE.click();
 		accountTypeInputWE.sendKeys(accountType);
 		accountTypeWE.submit();
-		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrameWE));
+//		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrameWE));
 //		wait.until(ExpectedConditions.elementToBeClickable(reCaptchaWE)).click();
 //		driver.switchTo().defaultContent();
 //		signUpBtnWE.click();

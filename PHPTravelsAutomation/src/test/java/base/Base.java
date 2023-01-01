@@ -39,17 +39,10 @@ public class Base {
 		} else if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					"C:\\chromedriver.exe");
-//			ChromeOptions options = new ChromeOptions();
-//			options.setCapability("Site key","6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI");
-//			options.setCapability("Secret key","6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe");
-//			this.driver = new ChromeDriver(options);
 			this.driver = new ChromeDriver();
 
 			 
 			
-
-//			driver.manage().deleteAllCookies();
-//			driver.manage().addCookie(new Cookie("PHPSESSID","cd02504ce2359c14f4e20962572aa2b"));
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			
@@ -64,7 +57,7 @@ public class Base {
 
 	@AfterClass
 	public void cleanUp() {
-	//	driver.quit();
+		driver.quit();
 	}
 
 }
