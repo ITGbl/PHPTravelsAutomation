@@ -2,8 +2,8 @@ package tests;
 
 import org.testng.annotations.Test;
 import base.Base;
-import pages.LoginPage;
-import pages.RegistrationPage;
+import pageObjects.LoginPage;
+import pageObjects.RegistrationPage;
 
 public class Test_01_RegistrationValid extends Base {
 	RegistrationPage registrationPage;

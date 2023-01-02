@@ -1,4 +1,4 @@
-package pages;
+package pageObjects;
 
 import java.time.Duration;
 

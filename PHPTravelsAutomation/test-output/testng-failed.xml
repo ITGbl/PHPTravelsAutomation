@@ -4,6 +4,13 @@
   <test thread-count="5" parallel="methods" name="Login(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="tests.Test_04_InvallidLogin">
+        <methods>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+          <include name="login_invallid"/>
+        </methods>
+      </class> <!-- tests.Test_04_InvallidLogin -->
       <class name="tests.Test_01_RegistrationValid">
         <methods>
           <include name="setUp"/>
@@ -11,6 +18,13 @@
           <include name="cleanUp"/>
         </methods>
       </class> <!-- tests.Test_01_RegistrationValid -->
+      <class name="tests.Test_03_VallidLogin">
+        <methods>
+          <include name="setUp"/>
+          <include name="login_vallid"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- tests.Test_03_VallidLogin -->
     </classes>
   </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

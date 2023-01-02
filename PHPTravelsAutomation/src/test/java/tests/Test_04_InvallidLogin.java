@@ -2,7 +2,7 @@ package tests;
 
 import org.testng.annotations.Test;
 import base.Base;
-import pages.LoginPage;
+import pageObjects.LoginPage;
 
 public class Test_04_InvallidLogin extends Base {
 	LoginPage loginPage;

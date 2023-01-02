@@ -3,8 +3,8 @@ package tests;
 import org.testng.annotations.Test;
 
 import base.Base;
-import pages.LoginPage;
-import pages.AccountPage;
+import pageObjects.AccountPage;
+import pageObjects.LoginPage;
 
 
 
