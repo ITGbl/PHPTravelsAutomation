@@ -40,33 +40,7 @@ public class LoginPage {
 		
 	}
 
-	public void enterUserName(String userName) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		wait.until(ExpectedConditions.elementToBeClickable(emailWE)).click();
-		emailWE.clear();
-		emailWE.sendKeys(userName);
-	}
-
-	public void enterUserPassword(String userPass) {
-		passwordWE.clear();
-		passwordWE.sendKeys(userPass);
-	}
-
-	public void rememberMe() {
-		rememberMeWE.click();
-	}
-
-	public void pressLogInBTN() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		wait.until(ExpectedConditions.elementToBeClickable(logInBtnWE)).click();
-	}
-
-//	public void clickLogIn() {
-//		logInBtnWE.click();
-//	}
-
 	public AccountPage login(String userEmail, String userPassword) {
-		// this.verifyLoginPage();
 		emailWE.clear();
 		emailWE.sendKeys(userEmail);
 		passwordWE.clear();

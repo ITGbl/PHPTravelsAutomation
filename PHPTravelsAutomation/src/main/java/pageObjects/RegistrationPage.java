@@ -89,7 +89,7 @@ public class RegistrationPage {
 	public void verifyInvalidPasswordMsg() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(this.errorMsgWE));
-		Assert.assertTrue(this.errorMsgWE.getText().trim().equals("Pasword mora sadrzati najmanje 6 karaktera"),
+		Assert.assertTrue(this.errorMsgWE.getText().trim().equals("Invalid credentials"),
 				"Registration page - invalid password message is not correct");
 	}
 }
