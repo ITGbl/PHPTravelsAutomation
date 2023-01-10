@@ -17,19 +17,22 @@ public class AccountPage {
   
 	
 	@FindBy(xpath="//img[@alt='user']")
-	WebElement avatarWE;
+	private WebElement avatarWE;
 	
 	@FindBy(xpath="//strong[normalize-space()='Super']")
-	WebElement nameWE;
+	private WebElement nameWE;
 	
 	@FindBy(xpath="//div[@class='sidebar-menu-wrap']")
-	WebElement accountMenuWE;
+	private WebElement accountMenuWE;
 	
 	@FindBy(xpath="//ul[@class='sidebar-menu list-items']//a[contains(@class,'waves-effect')][normalize-space()='Logout']")
-	WebElement logOutWE;
+	private WebElement logOutWE;
 	
 	@FindBy(xpath="//ul[@class='sidebar-menu list-items']//a[contains(@class,'waves-effect')][normalize-space()='My Profile']")
-	WebElement MyProfileWE;
+	private WebElement MyProfileWE;
+	
+	@FindBy(xpath="//*[@id=\"fadein\"]/header/div/div/div/div/div/div[2]/div/div[1]/nav/ul/li[1]/a")
+	private WebElement hotelsWE;
 	
 	public AccountPage(WebDriver driver) {
 		this.driver = driver;
@@ -59,9 +62,12 @@ public class AccountPage {
 		wait.until(ExpectedConditions.elementToBeClickable(logOutWE));
 		logOutWE.click();
 		
-		
-		return null;
-		
+		return null;		
 
 	}
+	
+	public void clickToHotels() {
+		hotelsWE.click();
+	}
+	
 }
